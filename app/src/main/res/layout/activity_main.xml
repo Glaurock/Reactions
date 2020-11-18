@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root_view"
+    android:background="@color/black"
+    android:clipChildren="false"
+    tools:showPaths="true">
+
+    <com.example.motionlayout.ReactionView
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@android:color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:clipChildren="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/reaction_view"
+        android:layout_width="50dp"
+        android:layout_height="50dp" >
+
+        <com.example.motionlayout.EmojiView
+            android:layout_margin="8dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            app:lottie_rawRes="@raw/haha"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <com.example.motionlayout.EmojiView
+            android:layout_margin="8dp"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            app:lottie_rawRes="@raw/wow"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <com.example.motionlayout.EmojiView
+            android:visibility="gone"
+            android:layout_margin="8dp"
+            app:lottie_rawRes="@raw/hehe"
+            android:layout_gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <com.example.motionlayout.EmojiView
+            android:layout_margin="8dp"
+            app:lottie_rawRes="@raw/love"
+            android:layout_gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+    </com.example.motionlayout.ReactionView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
